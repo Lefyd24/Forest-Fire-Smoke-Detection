@@ -10,6 +10,7 @@ import sys
 import tempfile
 import subprocess
 import io
+import yolov7
 #sys.path.append("yolov7")
 
 model_yolov8 = "models/model_chris_0908/weights/fire_model.pt"
@@ -24,12 +25,18 @@ st.set_page_config(
 
 with st.sidebar:
     model_selection = st.selectbox("Choose a model:", ["YOLOv8", "YOLOv7"]) #  
-    st.header("Image/Video Config")
     # Model selection dropdown
-    uploaded_file = st.file_uploader(
-        "Upload an image or video...", type=("jpg", "jpeg", "png", "bmp", "webp", "mp4")
-    )
-    
+    if model_selection == "YOLOv8":
+        st.header("Image/Video Config")
+        uploaded_file = st.file_uploader(
+            "Upload an image or video...", type=("jpg", "jpeg", "png", "bmp", "webp", "mp4")
+        )
+    else:
+        st.header("Image Config")
+        uploaded_file = st.file_uploader(
+            "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp")
+        )
+        
     
 
     confidence = float(st.slider("Select Model Confidence", 15, 100, 20)) / 100
@@ -66,7 +73,7 @@ if model_selection == "YOLOv8":
         st.error(ex)
 elif model_selection == "YOLOv7":
     try:
-        pass
+        model = yolov7.load(model_yolov7)
     except Exception as ex:
         st.error(f"Unable to load YOLOv7 model. Check the specified path: {model_yolov7}")
         st.error(ex)
@@ -178,21 +185,18 @@ if st.sidebar.button("Detect Objects"):
             process_image_detections(res, col2, model_selection)
 
         else:
-            res = subprocess.run(["python", "yolov7/detect.py", "--weights", model_yolov7, "--source", temp_file, "--conf", str(confidence), "--output", "-"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            if res.returncode == 0:
-                # The output image data is in res.stdout
-                # Use BytesIO to convert bytes to an image
-                detected_image = PIL.Image.open(io.BytesIO(res.stdout))
-                with col2:
-                    st.image(detected_image, caption='Detected Image', use_column_width=True)
-            else:
-                st.write('Error:', res.stderr.decode())
+            model.conf = confidence
+            res = model(uploaded_image)
+            print(res.pred[0])
+            with col2:
+                predicted_image = res.render()
+                st.image(predicted_image, caption="Uploaded Image", use_column_width=True)
         
     else:
         if model_selection == "YOLOv8":
             output_video = process_video(uploaded_file, model, confidence)
         else:
-            processed_video_path = model.process_video(uploaded_file, conf_thres=confidence)
+            pass
         with col2:
             if model_selection == "YOLOv8":
                 #video_bytes = open(output_video, "rb").read()
