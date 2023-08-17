@@ -9,6 +9,7 @@ import pandas as pd
 import sys
 import tempfile
 import subprocess
+import io
 #sys.path.append("yolov7")
 
 model_yolov8 = "models/model_chris_0908/weights/fire_model.pt"
@@ -177,22 +178,15 @@ if st.sidebar.button("Detect Objects"):
             process_image_detections(res, col2, model_selection)
 
         else:
-            import shutil
-            #temp_dir = tempfile.mkdtemp()
-            # Run YOLOv7 detection and save output to the temporary directory',
-            res = subprocess.run(["python", "yolov7/detect.py", "--weights", model_yolov7, "--source", temp_file, "--conf", str(confidence)], capture_output=True)
-            # Assuming the detected image has the same name as the input image but is in the temporary directory',
-            detected_image_path = os.path.join("runs/detect/exp", os.path.basename(temp_file))
-            # Check if the detected image exists",
-            if os.path.exists(detected_image_path):
-                # Use PIL to open and display the image in Stream   lit",
-                detected_image = PIL.Image.open(detected_image_path)
+            res = subprocess.run(["python", "yolov7/detect.py", "--weights", model_yolov7, "--source", temp_file, "--conf", str(confidence), "--output", "-"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            if res.returncode == 0:
+                # The output image data is in res.stdout
+                # Use BytesIO to convert bytes to an image
+                detected_image = PIL.Image.open(io.BytesIO(res.stdout))
                 with col2:
                     st.image(detected_image, caption='Detected Image', use_column_width=True)
-                # remove the directory
-                shutil.rmtree("runs/detect/exp")
             else:
-                st.write('Error: Detected image not found!')
+                st.write('Error:', res.stderr.decode())
         
     else:
         if model_selection == "YOLOv8":
