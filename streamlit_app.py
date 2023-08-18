@@ -61,11 +61,11 @@ with col1:
         else:
             st.video(uploaded_file)
 
-@st.cache
+@st.cache_resource
 def load_yolov8_model():
     return YOLO(model_yolov8)
 
-@st.cache
+@st.cache_resource
 def load_yolov7_model():
     return yolov7.load(model_yolov7)
 
