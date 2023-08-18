@@ -26,18 +26,15 @@ st.set_page_config(
 with st.sidebar:
     model_selection = st.selectbox("Choose a model:", ["YOLOv8", "YOLOv7"]) #  
     # Model selection dropdown
-    if model_selection == "YOLOv8":
-        st.header("Image/Video Config")
-        uploaded_file = st.file_uploader(
-            "Upload an image or video...", type=("jpg", "jpeg", "png", "bmp", "webp", "mp4")
-        )
-    else:
-        st.header("Image Config")
-        uploaded_file = st.file_uploader(
-            "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp")
-        )
-        
-    
+    st.header("Image Config")
+    uploaded_file = st.file_uploader(
+        "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp")
+    )
+   
+    #st.header("Image/Video Config")
+    #uploaded_file = st.file_uploader(
+    #    "Upload an image or video...", type=("jpg", "jpeg", "png", "bmp", "webp", "mp4")
+    #)x
 
     confidence = float(st.slider("Select Model Confidence", 15, 100, 20)) / 100
 
