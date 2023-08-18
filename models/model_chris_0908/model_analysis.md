@@ -3,7 +3,7 @@ Based on the graphs provided during the training of the model the following conc
 The precision-recall curve shows the tradeoff between precision and recall for different threshold. A high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).<br>
 
 #### Graph 1.1: Precision-Recall Curve
-<img src="PR_curve.png" width="500" height="500" /><br>
+<img src="PR_curve.png" width="1000" height="500" /><br>
 
 `In our case:`
 > * *`High Precision at Low Recall`*: At the beginning of the curve (towards the left), the precision is very high, suggesting that the model is highly confident in its positive predictions for a limited set of instances. However, as we try to capture more positive instances (increasing recall), the precision starts to drop, indicating that the model begins to make more false positive errors. <br>
