@@ -184,7 +184,14 @@ if st.sidebar.button("Detect Objects"):
         else:
             model.conf = confidence
             res = model(uploaded_image)
-            print(res.pred[0])
+            predictions = res.pred[0]
+            boxes = predictions[:, :4] # x1, y1, x2, y2
+            scores = predictions[:, 4]
+            categories = predictions[:, 5]
+            print(boxes)
+            print(scores)
+            print(categories)
+            
             with col2:
                 predicted_image = res.render()
                 st.image(predicted_image, caption="Uploaded Image", use_column_width=True)
