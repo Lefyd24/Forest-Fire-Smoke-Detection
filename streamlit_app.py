@@ -84,6 +84,7 @@ elif model_selection == "YOLOv7":
         st.error(f"Unable to load YOLOv7 model. Check the specified path: {model_yolov7}")
         st.error(ex)
 
+@st.cache_data(max_entries=20)
 def process_image_detections(res, col2, model_selection):
     if model_selection == "YOLOv8":
         print(res[0].speed)
