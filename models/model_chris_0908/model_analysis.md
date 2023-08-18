@@ -10,3 +10,10 @@ The precision-recall curve shows the tradeoff between precision and recall for d
 * *`Curve Shape`*: The curve is relatively smooth but has some dips, suggesting that there are certain thresholds where the precision drops more significantly. This could be due to various reasons like class imbalance or certain classes being harder to predict than others.
 * *`Area Under the Curve (AUC)`*: A larger area under the PR curve indicates better performance. From the graph 1.1 above, the curve seems to cover a good portion of the graph, indicating decent performance.<br>
 * *`Curve's Decline`*: Towards the extreme right of the graph, there's a steeper decline. This indicates that as we try to achieve <b>very high recall, the precision drops off more rapidly<b>. This could be due to the model struggling with more challenging or ambiguous instances as said in bibliography. In our case, since smoke and fire are quite ambiguous, in both shape and color, it is expected that the model will struggle to predict them with high confidence.</b><br>
+
+# 2. F1 Score
+The F1 score is the harmonic mean of precision and recall:
+
+\[ F1 = 2 \times \frac{\text{precision} \times \text{recall}}{\text{precision} + \text{recall}} \]
+
+An F1 score reaches its best value at 1 (perfect precision and recall) and the worst at 0.
