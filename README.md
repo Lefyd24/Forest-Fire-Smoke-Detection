@@ -15,4 +15,7 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 ## Google Colab Notebooks used for training:
 - [YOLOv8](https://colab.research.google.com/drive/1oOhKRR0QGHGdBYt3ru9HHZj8VXdTlAv3) (Link To Be Replaced)
 - [YOLOv7](https://colab.research.google.com/drive/1lWRhfprK58WxoUX5I38y3GW6-1rCWfzp#scrollTo=GD9gUQpaBxNa)
+
+## Creds:
+- [YOLOv7 with Python API instead of CLI](https://github.com/kadirnar/yolov7-pip)
  
