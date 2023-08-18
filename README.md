@@ -1,5 +1,4 @@
 # Forest Fire & Smoke Detection using YOLOv8 & YOLOv7
-## Hosted on Streamlit Cloud for easy access and inference
 ### a demo project in the context of the course "Machine Learning and Content Analytics" of the MSc in Business Analytics at Athens University of Economics and Business (AUEB)
 #### ~ <a href="https://forestfiresmokedetection.streamlit.app/" target="_blank">Streamlit App</a>
 This is a demo project designed to demonstrate the use of 2 trained models for inference - a YOLOv8 model and a YOLOv7 one, both trained on the same dataset, with the same resources, number of epochs and rest characteristics, inside a <b>Streamlit</b> Serverless Application.<br>
