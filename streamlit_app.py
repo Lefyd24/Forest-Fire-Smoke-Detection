@@ -61,16 +61,25 @@ with col1:
         else:
             st.video(uploaded_file)
 
+st.cache
+def load_yolov8_model():
+    return YOLO(model_yolov8)
+
+st.cache
+def load_yolov7_model():
+    return yolov7.load(model_yolov7)
+
 # Load model based on user selection
 if model_selection == "YOLOv8":
     try:
-        model = YOLO(model_yolov8)
+
+        model = load_yolov8_model()
     except Exception as ex:
         st.error(f"Unable to load YOLOv8 model. Check the specified path: {model_yolov8}")
         st.error(ex)
 elif model_selection == "YOLOv7":
     try:
-        model = yolov7.load(model_yolov7)
+        model = load_yolov7_model()
     except Exception as ex:
         st.error(f"Unable to load YOLOv7 model. Check the specified path: {model_yolov7}")
         st.error(ex)
