@@ -1,4 +1,4 @@
-This is a demo project designed to demonstrate the use of 2 trained models for inference - a YOLOv8 model and a YOLOv7 one, both trained on the same dataset, with the same resources, number of epochs and rest characteristics.<br>
+This is a demo project designed to demonstrate the use of 2 trained models for inference - a YOLOv8 model and a YOLOv7 one, both trained on the same dataset, with the same resources, number of epochs and rest characteristics, inside a <b>Streamlit</b> Serverless Application.<br>
 The dataset used for training is the [Fire Image Dataset V2](https://universe.roboflow.com/kirzone/fire-iejes/dataset/2#) from [Roboflow](https://universe.roboflow.com/) (on open source website) and the models were trained on a Google Colab instance with a T4 GPU.<br>
 <b>Model Training Params:</b>
 | Type (Param)       	| Value 	|
