@@ -36,8 +36,6 @@ Based on the Graph 2.1 above (derived from the file [results.csv](results.csv) t
 <br>
 
 `Conclusion`:
-The YOLOv8 model seems to be training well. Both training and validation losses are decreasing, indicating that the model is learning effectively and generalizing well to unseen data. The validation metrics also showcase stable and consistent performance, which is a good sign for the model's robustness and reliability.
-
-However, as always with deep learning models, it's crucial to test the model in real-world scenarios or on a separate test set to gauge its true performance and ensure that it meets the specific requirements of the application.
+The YOLOv8 model has been trained well in general principles. Both training and validation losses were decreasing, indicating that the model was learning effectively and generalizing well to unseen data. The validation metrics also showcased stable and consistent performance, which was a good sign for the model's robustness and reliability.
 
 [^1]: [Ultralytics Measures Documentation](https://docs.ultralytics.com/reference/utils/metrics/#ultralytics.utils.metrics.Metric)

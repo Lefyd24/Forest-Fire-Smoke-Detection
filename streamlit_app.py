@@ -38,7 +38,7 @@ with st.sidebar:
 
     confidence = float(st.slider("Select Model Confidence", 15, 100, 20)) / 100
 
-st.title("Forest Fire and Smoke Detection using YOLOv8")
+st.title("Forest Fire and Smoke Detection using YOLOv8 & YOLOv7")
 st.caption("a Project for MSc in Business Analytics (AUEB) - Machine Learning and Content Analytics 2023")
 with st.expander("Model Characteristics"):
     chars_alt = pd.DataFrame({
