@@ -6,11 +6,8 @@ from ultralytics import YOLO
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
-import sys
-import tempfile
-import subprocess
-import io
 import yolov7
+import tempfile
 #sys.path.append("yolov7")
 
 model_yolov8 = "models/model_chris_0908/weights/fire_model.pt"
@@ -28,7 +25,7 @@ with st.sidebar:
     # Model selection dropdown
     st.header("Image Config")
     uploaded_file = st.file_uploader(
-        "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp")
+        "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp", 'mp4')
     )
    
     #st.header("Image/Video Config")
