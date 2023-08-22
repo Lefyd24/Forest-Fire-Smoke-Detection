@@ -14,6 +14,6 @@ The precision-recall curve shows the tradeoff between precision and recall for d
 # 2. F1 Score
 The F1 score is the harmonic mean of precision and recall:
 
-$ F1 = 2 \times \frac{\text{precision} \times \text{recall}}{\text{precision} + \text{recall}} $
+$ F1 = 2 * \frac{\text{precision} \times \text{recall}}{\text{precision} + \text{recall}} $
 
 An F1 score reaches its best value at 1 (perfect precision and recall) and the worst at 0.
