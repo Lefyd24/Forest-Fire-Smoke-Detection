@@ -29,10 +29,10 @@ Based on the Graph 2.1 above (derived from the file [results.csv](results.csv) t
 
 `Validation Metrics`
 
-<span style='color:green'>Precision</span>: Starts off relatively high and remains stable throughout the epochs. This suggests that, of the predicted positive cases, a good proportion is indeed positive.<br>
-<span style='color:green'>Recall</span>: Shows a slight increase initially and then stabilizes. This indicates that the model's ability to identify all relevant instances improves slightly and then maintains its performance.<br>
-<span style='color:orange'>mAP@0.5 [^1] </span>: Displays a similar trend as Recall, with a slight increase initially, followed by stabilization. A higher mAP@0.5 means the model has good precision and recall at an Intersection over Union (IoU) threshold of 0.5.<br>
-<span style='color:orange'>mAP@0.5:0.95 [^1] </span>: This metric gives an average mAP over multiple IoU thresholds. It also shows a steady increase, suggesting consistent improvements in model accuracy across various IoU thresholds.
+* **Precision** : Starts off relatively high and remains stable throughout the epochs. This suggests that, of the predicted positive cases, a good proportion is indeed positive.<br>
+* **Recall**: Shows a slight increase initially and then stabilizes. This indicates that the model's ability to identify all relevant instances improves slightly and then maintains its performance.<br>
+* **mAP@0.5** [^1]: Displays a similar trend as Recall, with a slight increase initially, followed by stabilization. A higher mAP@0.5 means the model has good precision and recall at an Intersection over Union (IoU) threshold of 0.5.<br>
+* **mAP@0.5:0.95** [^1]: This metric gives an average mAP over multiple IoU thresholds. It also shows a steady increase, suggesting consistent improvements in model accuracy across various IoU thresholds.
 <br>
 
 `Conclusion`:
