@@ -27,6 +27,9 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 #### Original vs Inference Image:
 <img src="original_img.jpeg" width="300" height="200" /><br>
 <img src="processed_img_yolov7.jpeg" width="300" height="200" /><br>
+| Original pic                            | Inference pic                           |
+| ----------------------------------- | ----------------------------------- |
+| ![original](original_img.jpeg) | ![predicted](processed_img_yolov7.jpeg) |
 
 ## Creds:
 - [YOLOv7 with Python API instead of CLI](https://github.com/kadirnar/yolov7-pip)
