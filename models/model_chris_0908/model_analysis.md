@@ -1,4 +1,5 @@
-Based on the graphs provided during the training of the model the following conclusions can be drawn regarding the performance of the model per metric:
+# Model Analysis
+
 # 1. Precision - Recall Curve
 The precision-recall curve shows the tradeoff between precision and recall for different threshold. A high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).<br>
 
