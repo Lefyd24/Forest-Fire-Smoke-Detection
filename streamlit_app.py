@@ -10,8 +10,8 @@ import yolov7
 import tempfile
 #sys.path.append("yolov7")
 
-model_yolov8 = "models/model_chris_0908/weights/fire_model.pt"
-model_yolov7 = "yolov7/runs/train/exp/weights/best.pt"
+model_yolov8 = "models/yolov8/weights/fire_model.pt"
+model_yolov7 = "models/yolov7/runs/train/exp/weights/best.pt"
 
 st.set_page_config(
     page_title="Forest Fire and Smoke Detection",
@@ -25,7 +25,7 @@ with st.sidebar:
     # Model selection dropdown
     st.header("Image Config")
     uploaded_file = st.file_uploader(
-        "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp", 'mp4')
+        "Upload an image...", type=("jpg", "jpeg", "png", "bmp", "webp")
     )
    
     #st.header("Image/Video Config")
