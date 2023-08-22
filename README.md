@@ -18,15 +18,15 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 
 ## YOLOv8 Preview:
 #### Original Video:
-<img src="original_video.gif" width="1000" height="400" /><br>
+<img src="preview_predictions/original_video.gif" width="1000" height="400" /><br>
 
 #### Inference Video:
-<img src="processed_video.gif" width="1000" height="400" /><br>
+<img src="preview_predictions/processed_video.gif" width="1000" height="400" /><br>
 
 ## YOLOv7 Preview:
 | Original Image                            | Inference Image                           |
 | ----------------------------------- | ----------------------------------- |
-| ![original](preview_predictions/original_img.jpeg) | ![predicted](preview_predictions/processed_img_yolov7.jpeg) |
+| ![original](original_img.jpeg) | ![predicted](processed_img_yolov7.jpeg) |
 
 ## Creds:
 - [YOLOv7 with Python API instead of CLI](https://github.com/kadirnar/yolov7-pip)
