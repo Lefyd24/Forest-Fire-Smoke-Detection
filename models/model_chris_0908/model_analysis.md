@@ -31,7 +31,7 @@ Based on the Graph 2.1 above (derived from the file [results.csv](results.csv) t
 
 <span style='color:green'>Precision</span>: Starts off relatively high and remains stable throughout the epochs. This suggests that, of the predicted positive cases, a good proportion is indeed positive.<br>
 <span style='color:green'>Recall</span>: Shows a slight increase initially and then stabilizes. This indicates that the model's ability to identify all relevant instances improves slightly and then maintains its performance.<br>
-<span style='color:orange'>mAP@0.5 [^1] </span>: Displays a similar trend as Recall, with a slight increase initially, followed by stabilization. A higher mAP@0.5 means the model has good precision and recall at an Intersection over Union (IoU) threshold of 0.5.
+<span style='color:orange'>mAP@0.5 [^1] </span>: Displays a similar trend as Recall, with a slight increase initially, followed by stabilization. A higher mAP@0.5 means the model has good precision and recall at an Intersection over Union (IoU) threshold of 0.5.<br>
 <span style='color:orange'>mAP@0.5:0.95 [^1] </span>: This metric gives an average mAP over multiple IoU thresholds. It also shows a steady increase, suggesting consistent improvements in model accuracy across various IoU thresholds.
 <br>
 
@@ -40,4 +40,4 @@ The YOLOv8 model seems to be training well. Both training and validation losses 
 
 However, as always with deep learning models, it's crucial to test the model in real-world scenarios or on a separate test set to gauge its true performance and ensure that it meets the specific requirements of the application.
 
-[^1]: (Ultralytics Measures Documentation)[https://docs.ultralytics.com/reference/utils/metrics/#ultralytics.utils.metrics.Metric]
+[^1]: [Ultralytics Measures Documentation](https://docs.ultralytics.com/reference/utils/metrics/#ultralytics.utils.metrics.Metric)
