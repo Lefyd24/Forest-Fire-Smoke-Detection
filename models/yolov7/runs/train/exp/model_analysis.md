@@ -47,7 +47,7 @@ Due to the specific goals and requirements of our application (detecting both fi
 * **Box Loss**: Represents the loss related to bounding box predictions. It shows a consistent decrease, indicating the model's improving ability to localize objects.
 * **Object Loss**: Related to object confidence. The decreasing trend suggests that the model is getting better at distinguishing objects from the background.
 * **Class Loss**: Pertains to class predictions. The decrease indicates improvements in classifying objects into correct categories.
-* Total Loss: A combination of the above three losses, also decreasing over epochs.
+* **Total Loss**: A combination of the above three losses, also decreasing over epochs.
 
 ### `Precision and Recall (Middle Plot)`:
 
@@ -70,7 +70,7 @@ Due to the specific goals and requirements of our application (detecting both fi
 * mAP metrics indicate consistent performance across different IoU thresholds.</b>
 <br><br>
 
-These observations reflect a well-trained model with balanced performance in terms of localization, confidence, and classification. As always, it would be advisable to evaluate the model on a separate test set or real-world scenarios to gauge its true performance.
+These observations reflect a well-trained model with balanced performance in terms of localization, confidence, and classification. Nevertheless, evaluating the model on a separate test set or real-world scenarios will eventually be the best practice to assess its performance and reliability.
 <br><br>
 
 The analysis also re­veals an interesting patte­rn in the model's performance­ between the­ "fire" and "smoke" classes. The­ PR curve illustrates a distinct disparity, suggesting that the­ model excels in de­tecting fires while pote­ntially facing challenges in identifying smoke­. This observation highlights both the strength and possible­ weaknesses of the­ model when it comes to distinguishing be­tween these­ two classes.
