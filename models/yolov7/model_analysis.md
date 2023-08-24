@@ -2,7 +2,7 @@
 
 # 1. Precision - Recall Curve
 #### Graph 1.1: Precision-Recall Curve
-<img src="PR_curve.png" width="1000" height="500" /><br>
+<img src="models/yolov7/runs/train/exp/PR_curve.png" width="1000" height="500" /><br>
 
 ### Shape of the Curve:
 
@@ -38,7 +38,7 @@ Depending on the specific goals and requirements of the application, this differ
 
 # 2. Training Statistics
 #### Graph 2.1: Training Statistics
-<img src="training_stats.png" width="900" height="900" /><br>
+<img src="models/yolov7/runs/train/exp/training_stats.png" width="900" height="900" /><br>
 
 #### Explanation of the plots
 
