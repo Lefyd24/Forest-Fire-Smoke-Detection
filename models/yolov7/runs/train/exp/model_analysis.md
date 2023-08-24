@@ -34,7 +34,7 @@ The model might be more attuned to features specific to fire, possibly due to mo
 
 ### Application Considerations:
 
-Depending on the specific goals and requirements of the application, this difference in performance between the two classes may be critical. If equal importance is placed on detecting both fire and smoke, further investigation and potential model adjustments may be needed to improve performance for the "smoke" class.
+Due to the specific goals and requirements of our application (detecting both fire and smoke instantly during a fire burst in the forest), this difference in performance between the two classes may be critical. Since equal importance is placed on detecting both fire and smoke, further investigation and potential model adjustments are necessary to improve performance for the "smoke" class, potentially with the the help of a second dataset, or a slight change in the model's hyperparameters.
 
 # 2. Training Statistics
 #### Graph 2.1: Training Statistics
