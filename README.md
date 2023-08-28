@@ -2,7 +2,7 @@
 ### a demo project in the context of the course "Machine Learning and Content Analytics" of the MSc in Business Analytics at Athens University of Economics and Business (AUEB)
 #### ~ <a href="https://forestfiresmokedetection.streamlit.app/" target="_blank">Streamlit App</a>
 This project serves as a demonstration of the capabilities of two pre-trained models for inference tasks—YOLOv8 and YOLOv7. Both models have been trained using identical parameters, including the dataset, computational resources, number of epochs, and other characteristics. The models are integrated within a serverless <b>Streamlit</b> application for seamless user interaction.<br>
-The dataset used for training is the [Fire Image Dataset V2](https://universe.roboflow.com/kirzone/fire-iejes/dataset/2#) from [Roboflow](https://universe.roboflow.com/) (on open source website) and the models were trained on a Google Colab instance with a T4 GPU.<br>
+The dataset used for training is the [Fire Image Dataset V2](https://universe.roboflow.com/kirzone/fire-iejes/dataset/2#) from [Roboflow](https://universe.roboflow.com/) (on open source website) and the models were trained on a Google Colab instance with a T4 GPU.<br><br>
 <b>Model Training Params:</b>
 | Type (Param)       	| Value 	|
 |--------------------	|-------	|
@@ -29,5 +29,7 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 | ![original](preview_predictions/original_img.jpeg) | ![predicted](preview_predictions/processed_img_yolov7.jpeg) |
 
 ## Creds:
+- [YOLOv8 Official](https://ultralytics.com/yolov8) (The model used for training was yolov8m.pt - Medium Sized Model Version)
+- [YOLOv7 Official](https://github.com/WongKinYiu/yolov7) (The model used for training was yolov7_training.pt - Transfer Learning Version)
 - [YOLOv7 with Python API instead of CLI](https://github.com/kadirnar/yolov7-pip)
  
