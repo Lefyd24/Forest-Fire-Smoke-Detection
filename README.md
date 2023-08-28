@@ -16,6 +16,15 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - [YOLOv8](https://colab.research.google.com/drive/1oOhKRR0QGHGdBYt3ru9HHZj8VXdTlAv3) (Link To Be Replaced)
 - [YOLOv7](https://colab.research.google.com/drive/1lWRhfprK58WxoUX5I38y3GW6-1rCWfzp#scrollTo=GD9gUQpaBxNa)
 
+## Instructions & Inference besides Streamlit App:
+- Clone the repo
+- Install the requirements.txt file by running the following command:
+    ```
+    pip install -r requirements.txt
+    ```
+- Open "predict_from_model.ipynb" file and run the cells given the path to the image you want to predict
+- The predictions will be saved in the "runs" folder
+
 ## YOLOv8 Preview:
 #### Original Video:
 <img src="preview_predictions/original_video.gif" width="1000" height="500" /><br>
