@@ -18,10 +18,10 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 
 ## YOLOv8 Preview:
 #### Original Video:
-<img src="preview_predictions/original_video.gif" width="1000" height="400" /><br>
+<img src="preview_predictions/original_video.gif" width="1000" height="500" /><br>
 
 #### Inference Video:
-<img src="preview_predictions/processed_video.gif" width="1000" height="400" /><br>
+<img src="preview_predictions/processed_video.gif" width="1000" height="500" /><br>
 
 ## YOLOv7 Preview:
 | Original Image                            | Inference Image                           |
