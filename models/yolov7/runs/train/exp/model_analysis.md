@@ -6,16 +6,15 @@
 
 ### Shape of the Curve:
 
-The curve appears to be relatively smooth and close to the upper-right corner of the plot. This is generally a positive indication, as it means that the model is able to achieve high precision and recall simultaneously.
+The curve appears to be relatively smooth but close to the lower-left corner of the plot. This is generally not a positive indication, as it means that the model is not able to achieve high precision and recall.
 
 ### Area Under the Curve (AUC):
 
-Although the exact AUC value is not shown in the image, a higher AUC for the PR curve signifies a better model. The displayed curve seems to occupy a significant portion of the plot's area, suggesting a relatively high AUC.
+Although the exact AUC value is not shown in the image, a higher AUC for the PR curve signifies a better model. The displayed curve does not seem to occupy a significant portion of the plot's area, suggesting a relatively small AUC. 
 
 ### Trade-Off Between Precision and Recall:
 
-The curve's trajectory provides insights into the trade-off between precision and recall. A model with a perfect PR curve would reach the top right corner (Precision = 1, Recall = 1).
-This curve's proximity to that ideal point suggests that the model can achieve a good balance between minimizing false positives (high precision) and maximizing true positives (high recall).
+The curve's trajectory provides insights into the trade-off between precision and recall. A model with a perfect PR curve would reach the top right corner (Precision = 1, Recall = 1). This curve's proximity to the lower point suggests that the model can achieve a moderate balance between minimizing false positives (high precision) and maximizing true positives (high recall)
 
 ### Performance for Fire Detection:
 
