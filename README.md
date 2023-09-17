@@ -3,6 +3,11 @@
 #### ~ <a href="https://forestfiresmokedetection.streamlit.app/" target="_blank">Streamlit App</a>
 This project serves as a demonstration of the capabilities of two pre-trained models for inference tasks—YOLOv8 and YOLOv7. Both models have been trained using identical parameters, including the dataset, computational resources, number of epochs, and other characteristics. The models are integrated within a serverless <b>Streamlit</b> application for seamless user interaction.<br>
 The dataset used for training is the [Fire Image Dataset V2](https://universe.roboflow.com/kirzone/fire-iejes/dataset/2#) from [Roboflow](https://universe.roboflow.com/) (on open source website) and the models were trained on a Google Colab instance with a T4 GPU.<br><br>
+## Repository Structure:
+- <b>models</b>: Contains the weights of the trained models as well as the configuration files used for training (scroll down for the exact location of the weights)
+- <b>preview_predictions</b>: Contains the original and the predicted images and videos for demonstration purposes
+- <b>times</b>: Contains the test made on the two models on a dataset of 2750 images, to test their inference time (to run the script [model_times.ipynb](times/model_times.ipynb), clone the repo and place it outside the "times" folder)
+
 <b>Model Training Params:</b>
 <img src='training_tables.png' width="1000" height="350" /><br>
 
@@ -11,8 +16,8 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - [YOLOv7](https://colab.research.google.com/drive/1lWRhfprK58WxoUX5I38y3GW6-1rCWfzp#scrollTo=GD9gUQpaBxNa)
 
 ## Model Weights:
-- [YOLOv8](models/yolov8/weights/fire_model.pt)
-- [YOLOv7](models/yolov7/runs/train/exp/weights/best.pt)
+- [YOLOv8 Model Weights](models/yolov8/weights/fire_model.pt)
+- [YOLOv7 Model Weights](models/yolov7/runs/train/exp/weights/best.pt)
 
 ## Instructions & Inference besides Streamlit App:
 - Clone the repo
