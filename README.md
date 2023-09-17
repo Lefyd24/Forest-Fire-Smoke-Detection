@@ -23,7 +23,7 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - [YOLOv7 Model Weights](models/yolov7/runs/train/exp/weights/best.pt)
 
 ## Inference Times (YOLOv8 vs YOLOv7):
-<img src='times/boxplot.png' width="1000" height="350" /><br>
+<img src='times/boxplot.png' width="1000" height="450" /><br>
 
 ## Instructions & Inference:
 #### For running inference (no Streamlit App):
