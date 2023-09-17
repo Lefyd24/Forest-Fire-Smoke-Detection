@@ -11,7 +11,7 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - <span style="color:orange"><b>streamlit_app.py</b></span>: Contains the code for the Streamlit App
 - <span style="color:orange"><b>predict_from_model.ipynb</b></span>: Contains the code for inference on an image for both models
 
-<b>Model Training Params:</b>
+<b>Models Basic Training Params:</b>
 <img src='training_tables.png' width="1000" height="350" /><br>
 
 ## Google Colab Notebooks used for training:
