@@ -11,7 +11,7 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - <span style="color:orange"><b>streamlit_app.py</b></span>: Contains the code for the Streamlit App
 - <span style="color:orange"><b>predict_from_model.ipynb</b></span>: Contains the code for inference on an image for both models
 
-<b>Models Basic Training Params:</b>
+<b>Models' Basic Training Params:</b>
 <img src='training_tables.png' width="1000" height="350" /><br>
 
 ## Google Colab Notebooks used for training:
@@ -22,7 +22,8 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - [YOLOv8 Model Weights](models/yolov8/weights/fire_model.pt)
 - [YOLOv7 Model Weights](models/yolov7/runs/train/exp/weights/best.pt)
 
-## Instructions & Inference besides Streamlit App:
+## Instructions & Inference:
+#### For running inference (no Streamlit App):
 - Clone the repo
 - Install the requirements.txt file by running the following command:
     ```
@@ -30,6 +31,18 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
     ```
 - Open "predict_from_model.ipynb" file and run the cells given the path to the image you want to predict
 - The predictions will be saved in the "runs" folder
+
+#### For running the Streamlit App:
+- Clone the repo
+- Install the requirements.txt file by running the following command:
+    ```
+    pip install -r requirements.txt
+    ```
+- Open your terminal and run the following command:
+    ```
+    streamlit run streamlit_app.py
+    ```
+- The app will open in your browser
 
 ## YOLOv8 Preview:
 #### Original Video:
