@@ -7,6 +7,9 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 - <b>models</b>: Contains the weights of the trained models as well as the configuration files used for training (scroll down for the exact location of the weights)
 - <b>preview_predictions</b>: Contains the original and the predicted images and videos for demonstration purposes
 - <b>times</b>: Contains the test made on the two models on a dataset of 2750 images, to test their inference time (to run the script [model_times.ipynb](times/model_times.ipynb), clone the repo and place it outside the "times" folder)
+- <span style="color:red"><b>Report.pdf</b></span>: Contains the detailed report of this project
+- <span style="color:orange"><b>streamlit_app.py</b></span>: Contains the code for the Streamlit App
+- <span style="color:orange"><b>predict_from_model.ipynb</b></span>: Contains the code for inference on an image for both models
 
 <b>Model Training Params:</b>
 <img src='training_tables.png' width="1000" height="350" /><br>
