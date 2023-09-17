@@ -4,13 +4,7 @@
 This project serves as a demonstration of the capabilities of two pre-trained models for inference tasks—YOLOv8 and YOLOv7. Both models have been trained using identical parameters, including the dataset, computational resources, number of epochs, and other characteristics. The models are integrated within a serverless <b>Streamlit</b> application for seamless user interaction.<br>
 The dataset used for training is the [Fire Image Dataset V2](https://universe.roboflow.com/kirzone/fire-iejes/dataset/2#) from [Roboflow](https://universe.roboflow.com/) (on open source website) and the models were trained on a Google Colab instance with a T4 GPU.<br><br>
 <b>Model Training Params:</b>
-| Type (Param)       	| Value 	|
-|--------------------	|-------	|
-| TOTAL IMAGES       	| 1706  	|
-| EPOCHS             	| 30    	|
-| IMAGE SIZE         	| 640   	|
-| BATCH SIZE         	| 20    	|
-| LR (Learning Rate) 	| 0.01  	|
+<img src='training_tables.png' width="1000" height="500" /><br>
 
 ## Google Colab Notebooks used for training:
 - [YOLOv8](https://colab.research.google.com/drive/1oOhKRR0QGHGdBYt3ru9HHZj8VXdTlAv3) (Link To Be Replaced)
