@@ -62,5 +62,5 @@ The dataset used for training is the [Fire Image Dataset V2](https://universe.ro
 ## Creds:
 - [YOLOv8 Official](https://ultralytics.com/yolov8) (The model used for training was yolov8m.pt - Medium Sized Model Version)
 - [YOLOv7 Official](https://github.com/WongKinYiu/yolov7) (The model used for training was yolov7_training.pt - Transfer Learning Version)
-- [YOLOv7 with Python API instead of CLI](https://github.com/kadirnar/yolov7-pip)
+- [YOLOv7 with Python API instead of CLI](https://github.com/kadirnar/yolov7-pip) - This GitHub Repo was cloned and modified to be used for inference, since original YOLOv7 repo uses CLI commands for both training and inference (which is not convenient for our use case).
  
